@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DataAccess.Models;
+using DataAccess.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace BusinessLogic.Service
 {

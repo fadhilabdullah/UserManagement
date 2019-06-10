@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    [Table("TB_R_EmpApplication")]
+    [Table("TB_T_UserApplication")]
     public class EmpApplication : BaseModel
     {
-        public int Employee_Id { get; set; }
+        public int User_Id { get; set; }
         public int Application_Id { get; set; }
 
-        [ForeignKey("Employee_Id")]
+        [ForeignKey("User_Id")]
         public virtual Employee Employee { get; set; }
         [ForeignKey("Application_Id")]
         public virtual Aplication Aplication { get; set; }

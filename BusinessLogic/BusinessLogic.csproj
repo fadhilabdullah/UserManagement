@@ -55,10 +55,25 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IApplicationService.cs" />
+    <Compile Include="Service\IDepartmentService.cs" />
+    <Compile Include="Service\IDistrictService.cs" />
+    <Compile Include="Service\IEmployeeService.cs" />
+    <Compile Include="Service\IPositionService.cs" />
+    <Compile Include="Service\IProvinceService.cs" />
+    <Compile Include="Service\IRegencyService.cs" />
+    <Compile Include="Service\IRoleService.cs" />
+    <Compile Include="Service\IUserService.cs" />
+    <Compile Include="Service\IVillageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{ca0f586c-a7bb-4dcb-ac55-46ccd0cfad8f}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

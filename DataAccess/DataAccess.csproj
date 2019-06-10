@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201906100225449_MyTable.cs" />
-    <Compile Include="Migrations\201906100225449_MyTable.Designer.cs">
-      <DependentUpon>201906100225449_MyTable.cs</DependentUpon>
+    <Compile Include="Migrations\201906100900135_MyTable.cs" />
+    <Compile Include="Migrations\201906100900135_MyTable.Designer.cs">
+      <DependentUpon>201906100900135_MyTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Aplication.cs" />
@@ -89,21 +89,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
-      <Project>{2de9934d-10eb-4e6a-a385-1e8ced24263b}</Project>
-      <Name>BusinessLogic</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Migrations\201906100900135_MyTable.resx">
+      <DependentUpon>201906100900135_MyTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{AC184FDD-511F-404A-B8DE-204BBF88E185}</Project>
       <Name>Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906100225449_MyTable.resx">
-      <DependentUpon>201906100225449_MyTable.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
