@@ -58,7 +58,7 @@
       <DependentUpon>201906100225449_MyTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Application.cs" />
+    <Compile Include="Models\Aplication.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\District.cs" />
     <Compile Include="Models\EmpApplication.cs" />

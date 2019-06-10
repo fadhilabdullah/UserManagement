@@ -22,8 +22,6 @@ namespace DataAccess.Models
             this.Password = userVM.Password;
             this.LoginStatus = userVM.LoginStatus;
             this.CreateDate = DateTime.Now.ToLocalTime();
-            this.UpdateDate = DateTime.Now.ToLocalTime();
-            this.DeleteDate = DateTime.Now.ToLocalTime();
         }
 
         public virtual void Update(UserVM userVM)

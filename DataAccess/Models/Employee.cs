@@ -57,8 +57,6 @@ namespace DataAccess.Models
             this.Village_Id = employeeVM.Village_Id;
             this.Position_Id = employeeVM.Position_Id;
             this.CreateDate = DateTime.Now.ToLocalTime();
-            this.UpdateDate = DateTime.Now.ToLocalTime();
-            this.DeleteDate = DateTime.Now.ToLocalTime();
         }
 
         public virtual void Update(EmployeeVM employeeVM)

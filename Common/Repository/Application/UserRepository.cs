@@ -46,7 +46,8 @@ namespace Common.Repository.Application
 
         public List<User> GetSearch(string values)
         {
-            throw new NotImplementedException();
+            var get = myContext.Users.Where(x => x.Id.ToString().Contains(values) && x.IsDelete == false).ToList();
+            return get;
         }
 
         public bool Insert(UserVM userVM)

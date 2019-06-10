@@ -20,8 +20,6 @@ namespace DataAccess.Models
         {
             this.Name = positionVM.Name;
             this.CreateDate = DateTime.Now.ToLocalTime();
-            this.UpdateDate = DateTime.Now.ToLocalTime();
-            this.DeleteDate = DateTime.Now.ToLocalTime();
         }
 
         public virtual void Update(PositionVM positionVM)

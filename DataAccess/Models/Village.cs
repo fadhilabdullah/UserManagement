@@ -25,8 +25,6 @@ namespace DataAccess.Models
             this.Name = villageVM.Name;
             this.District_Id = villageVM.District_Id;
             this.CreateDate = DateTime.Now.ToLocalTime();
-            this.UpdateDate = DateTime.Now.ToLocalTime();
-            this.DeleteDate = DateTime.Now.ToLocalTime();
         }
 
         public virtual void Update(VillageVM villageVM)
