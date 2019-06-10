@@ -1,0 +1,14 @@
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\DataAccess.exe.config
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\DataAccess.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\Core.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\Core.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.Migrations.MyTable.resources
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache

@@ -1,0 +1,10 @@
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\Core.exe.config
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\Core.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\Core.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\EntityFramework.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\EntityFramework.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\obj\Debug\Core.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\Core\obj\Debug\Core.pdb
