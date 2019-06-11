@@ -2,11 +2,9 @@ C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\U
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\UserManagementApplication.exe
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\UserManagementApplication.pdb
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication.csprojResolveAssemblyReference.cache
-C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\MainWindow.g.cs
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\App.g.cs
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication_MarkupCompile.cache
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication_MarkupCompile.lref
-C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\MainWindow.baml
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication.g.resources
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication.Properties.Resources.resources
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserManagementApplication.csproj.GenerateResource.Cache
@@ -16,3 +14,14 @@ C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\U
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\EntityFramework.xml
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\MaterialDesignColors.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\MainWindow.g.cs
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\App.baml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\MainWindow.baml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\ApplicationList.g.cs
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\ApplicationList.baml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\ForgetPassword.g.cs
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\obj\Debug\UserInterface\ForgetPassword.baml
