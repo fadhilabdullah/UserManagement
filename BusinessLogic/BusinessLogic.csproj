@@ -54,6 +54,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Application\ApplicationService.cs" />
+    <Compile Include="Service\Application\DepartmentService.cs" />
+    <Compile Include="Service\Application\DistrictService.cs" />
+    <Compile Include="Service\Application\EmployeeService.cs" />
+    <Compile Include="Service\Application\PositionService.cs" />
+    <Compile Include="Service\Application\ProvinceService.cs" />
+    <Compile Include="Service\Application\RegencyService.cs" />
+    <Compile Include="Service\Application\RoleService.cs" />
+    <Compile Include="Service\Application\UserService.cs" />
+    <Compile Include="Service\Application\VillageService.cs" />
     <Compile Include="Service\IApplicationService.cs" />
     <Compile Include="Service\IDepartmentService.cs" />
     <Compile Include="Service\IDistrictService.cs" />
@@ -70,11 +80,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1eca7889-0a22-49e0-a680-a5f720ead8d0}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{ca0f586c-a7bb-4dcb-ac55-46ccd0cfad8f}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
