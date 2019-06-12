@@ -72,11 +72,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="UserInterface\ApplicationList.xaml">
+    <Compile Include="UserInterface\ApplicationListxaml.xaml.cs">
+      <DependentUpon>ApplicationListxaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\UserManagement.xaml.cs">
+      <DependentUpon>UserManagement.xaml</DependentUpon>
+    </Compile>
+    <Page Include="UserInterface\ApplicationListxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\DashBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\EmployeeList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserInterface\ForgetPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,16 +106,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UserInterface\ApplicationList.xaml.cs">
-      <DependentUpon>ApplicationList.xaml</DependentUpon>
+    <Compile Include="UserInterface\DashBoard.xaml.cs">
+      <DependentUpon>DashBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\EmployeeList.xaml.cs">
+      <DependentUpon>EmployeeList.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\ForgetPassword.xaml.cs">
       <DependentUpon>ForgetPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserInterface\UserManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,9 +156,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\IconGroupUser.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\Home.png" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +163,26 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\IconBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\ApplicationList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\EmployeeList.png" />
+    <Resource Include="Assets\UserList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{2DE9934D-10EB-4E6A-A385-1E8CED24263B}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{CA0F586C-A7BB-4DCB-AC55-46CCD0CFAD8F}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

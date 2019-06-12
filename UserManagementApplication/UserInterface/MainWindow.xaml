@@ -6,15 +6,19 @@
         xmlns:local="clr-namespace:UserManagementApplication"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Login" Height="515" Width="350" 
-        ResizeMode="NoResize" 
+        Title="Login" Height="546" Width="350" 
         WindowStartupLocation="CenterScreen" 
-        WindowStyle="None" 
         FontFamily="Segoe UI Emoji">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Rectangle Height="280" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF2281D1"/>
                     <GradientStop Color="#FF34268A" Offset="1"/>
                     <GradientStop Color="#FF33288B" Offset="0.546"/>
@@ -31,12 +35,12 @@
             <Label Content="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
             <StackPanel VerticalAlignment="Center" Margin="15">
                 <TextBox x:Name="txt_email" Margin="0,10" materialDesign:HintAssist.Hint="EMAIL" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
-                <PasswordBox x:Name="txt_password" Margin="0,10" materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <PasswordBox x:Name="txt_password" PasswordChar="*" Margin="0,10" materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
-        <Button x:Name="btn_login" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,100,81" Content="LOGIN"/>
+        <Button x:Name="btn_login" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,100,81" Content="LOGIN" Click="btn_login_Click"/>
         <Image Source="/UserManagementApplication;component/Assets/Home.png" Width="100" Height="100" VerticalAlignment="Top" Margin="30"/>
-        <CheckBox x:Name="checkRememer" Content="Remember Me" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="125,0,125,47" Foreground="Gray" Cursor="Hand"/>
-        <TextBlock x:Name="Forgot" HorizontalAlignment="Left" Margin="131,481,0,0" TextWrapping="Wrap" Text="Forgot Password?" VerticalAlignment="Top" MouseUp="Forgot_MouseUp" Cursor="Hand"/>
+        <CheckBox x:Name="checkRememer" Content="Remember Me" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="121,0,80,57" Foreground="Gray" Cursor="Hand" Width="141" HorizontalContentAlignment="Stretch"/>
+        <TextBlock x:Name="Forgot" HorizontalAlignment="Left" Margin="127,463,0,0" TextWrapping="Wrap" Text="Forgot Password?" VerticalAlignment="Top" MouseUp="Forgot_MouseUp" Cursor="Hand"/>
     </Grid>
 </Window>

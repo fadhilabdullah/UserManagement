@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\App.xaml
-3-864901289
+71252676292
 
-11516340288
-18-5481320
-UserInterface\ApplicationList.xaml;UserInterface\ForgetPassword.xaml;UserInterface\MainWindow.xaml;
+151666082792
+201592344032
+UserInterface\ApplicationListxaml.xaml;UserInterface\DashBoard.xaml;UserInterface\EmployeeList.xaml;UserInterface\ForgetPassword.xaml;UserInterface\Home.xaml;UserInterface\MainWindow.xaml;UserInterface\UserManagement.xaml;
 
-True
+False
 

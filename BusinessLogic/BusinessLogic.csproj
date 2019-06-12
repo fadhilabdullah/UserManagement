@@ -58,6 +58,7 @@
     <Compile Include="Service\Application\DepartmentService.cs" />
     <Compile Include="Service\Application\DistrictService.cs" />
     <Compile Include="Service\Application\EmployeeService.cs" />
+    <Compile Include="Service\Application\LoginService.cs" />
     <Compile Include="Service\Application\PositionService.cs" />
     <Compile Include="Service\Application\ProvinceService.cs" />
     <Compile Include="Service\Application\RegencyService.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Service\IDepartmentService.cs" />
     <Compile Include="Service\IDistrictService.cs" />
     <Compile Include="Service\IEmployeeService.cs" />
+    <Compile Include="Service\ILoginService.cs" />
     <Compile Include="Service\IPositionService.cs" />
     <Compile Include="Service\IProvinceService.cs" />
     <Compile Include="Service\IRegencyService.cs" />

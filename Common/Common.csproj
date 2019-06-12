@@ -58,6 +58,7 @@
     <Compile Include="Repository\Application\DepartmentRepository.cs" />
     <Compile Include="Repository\Application\DistrictRepository.cs" />
     <Compile Include="Repository\Application\EmployeeRepository.cs" />
+    <Compile Include="Repository\Application\LoginRepository.cs" />
     <Compile Include="Repository\Application\PositionRepository.cs" />
     <Compile Include="Repository\Application\ProvinceRepository.cs" />
     <Compile Include="Repository\Application\RegencyRepository.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Repository\IDepartmentRepository.cs" />
     <Compile Include="Repository\IDistrictRepository.cs" />
     <Compile Include="Repository\IEmployeeRepository.cs" />
+    <Compile Include="Repository\ILoginRepository.cs" />
     <Compile Include="Repository\IPositionRepository.cs" />
     <Compile Include="Repository\IProvinceRepository.cs" />
     <Compile Include="Repository\IRegencyRepository.cs" />

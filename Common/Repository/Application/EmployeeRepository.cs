@@ -56,8 +56,6 @@ namespace Common.Repository.Application
             var push = new Employee(employeeVM);
             var getDepartmentId = myContext.Departments.Find(employeeVM.Department_Id);
             push.Department = getDepartmentId;
-            var getRoleId = myContext.Roles.Find(employeeVM.Role_Id);
-            push.Role = getRoleId;
             var getUserId = myContext.Users.Find(employeeVM.User_Id);
             push.User = getUserId;
             var getPositionId = myContext.Positions.Find(employeeVM.Position_Id);
@@ -82,8 +80,6 @@ namespace Common.Repository.Application
             var put = Get(id);
             var getDepartmentId = myContext.Departments.Find(employeeVM.Department_Id);
             put.Department = getDepartmentId;
-            var getRoleId = myContext.Roles.Find(employeeVM.Role_Id);
-            put.Role = getRoleId;
             var getUserId = myContext.Users.Find(employeeVM.User_Id);
             put.User = getUserId;
             var getPositionId = myContext.Positions.Find(employeeVM.Position_Id);

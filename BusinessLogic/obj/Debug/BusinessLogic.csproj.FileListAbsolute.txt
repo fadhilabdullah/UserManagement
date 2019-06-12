@@ -1,0 +1,16 @@
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\BusinessLogic.exe.config
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\BusinessLogic.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\Common.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\DataAccess.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\Core.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\Common.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\bin\Debug\Core.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\obj\Debug\BusinessLogic.exe
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\BusinessLogic\obj\Debug\BusinessLogic.pdb

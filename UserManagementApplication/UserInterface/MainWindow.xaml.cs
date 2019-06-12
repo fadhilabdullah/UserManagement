@@ -1,7 +1,12 @@
-﻿using System;
+﻿using BusinessLogic.Service;
+using BusinessLogic.Service.Application;
+using DataAccess.Context;
+using DataAccess.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +26,9 @@ namespace UserManagementApplication
     /// </summary>
     public partial class MainWindow : Window
     {
+        ILoginService iLoginService = new LoginService();
+        MyContext myContext = new MyContext();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -64,13 +72,29 @@ namespace UserManagementApplication
 
         private void btn_login_Click(object sender, RoutedEventArgs e)
         {
+            string email = txt_email.Text;
+            string password = txt_password.Password;
 
+            var get = myContext.Employees.Include("User").Where(x => (x.Email == (email) && x.User.Password == (password))).SingleOrDefault();
+            //result = iLoginService.(get);
+            if (txt_email.Text == email && txt_password.Password == password)
+            {
+                MessageBox.Show("Succes Login");
+                DashBoard dashboard = new DashBoard();
+                dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Your Login Fail");
+            }
         }
 
         private void Forgot_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ForgetPassword calling = new ForgetPassword();
-            calling.ShowDialog();
+            ForgetPassword ForgetPassword = new ForgetPassword();
+            ForgetPassword.Show();
+            this.Hide();
         }
     }
 }

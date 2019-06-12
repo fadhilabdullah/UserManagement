@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,19 @@ namespace UserManagementApplication.UserInterface
         public ForgetPassword()
         {
             InitializeComponent();
+        }
+
+        private void img_Close_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+            Close();
+        }
+
+        private void img_Back_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow Login = new MainWindow();
+            Login.Show();
+            this.Hide();
         }
     }
 }
