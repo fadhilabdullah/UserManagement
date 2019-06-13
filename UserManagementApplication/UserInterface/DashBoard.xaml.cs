@@ -47,12 +47,23 @@ namespace UserManagementApplication.UserInterface
                     usc = new Home();
                     GridMain.Children.Add(usc);
                     break;
-                //case "ItemCreate":
-                //    usc = new UserControlCreate();
-                //    GridMain.Children.Add(usc);
-                //    break;
-                //default:
-                //    break;
+
+                case "ItemApplication":
+                    usc = new ApplicationListxaml();
+                    GridMain.Children.Add(usc);
+                    break;
+
+                case "ItemUser":
+                    usc = new UserList();
+                    GridMain.Children.Add(usc);
+                    break;
+
+                case "ItemEmployee":
+                    usc = new EmployeeList();
+                    GridMain.Children.Add(usc);
+                    break;
+                default:
+                    break;
             }
         }
 

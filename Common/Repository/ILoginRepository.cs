@@ -12,7 +12,9 @@ namespace Common.Repository
         //Employee GetEmail(int id);
         //User GetPass(int id);
 
-        List<Employee> GetEmail(string email);
-        List<User> GetPass(string password);
+        //List<Employee> GetEmail(string email);
+        //List<User> GetPass(string password);
+
+        bool CekLogin(string email, string password);
     }
 }

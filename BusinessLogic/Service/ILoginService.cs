@@ -9,7 +9,6 @@ namespace BusinessLogic.Service
 {
     public interface ILoginService
     {
-        List<Employee> GetEmail(string email);
-        List<User> GetPass(string password);
+        bool CekLogin(string email, string password);
     }
 }

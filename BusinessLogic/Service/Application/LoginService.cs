@@ -13,14 +13,9 @@ namespace BusinessLogic.Service.Application
     {
         ILoginRepository iLogintRepository = new LoginRepository();
 
-        public List<Employee> GetEmail(string email)
+        public bool CekLogin(string email, string password)
         {
-            return iLogintRepository.GetEmail(email);
-        }
-
-        public List<User> GetPass(string password)
-        {
-            return iLogintRepository.GetPass(password);
+            return iLogintRepository.CekLogin(email, password);
         }
     }
 }

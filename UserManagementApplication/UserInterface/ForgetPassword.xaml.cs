@@ -1,4 +1,7 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿using BusinessLogic.Service;
+using BusinessLogic.Service.Application;
+using DataAccess.Context;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +23,9 @@ namespace UserManagementApplication.UserInterface
     /// </summary>
     public partial class ForgetPassword : Window
     {
+        ILoginService iLoginService = new LoginService();
+        MyContext myContext = new MyContext();
+
         public ForgetPassword()
         {
             InitializeComponent();
@@ -36,6 +42,30 @@ namespace UserManagementApplication.UserInterface
             MainWindow Login = new MainWindow();
             Login.Show();
             this.Hide();
+        }
+
+        private void btn_Apply_Click(object sender, RoutedEventArgs e)
+        {
+            //int changed;
+            //string loginemailid = txt_email.Text.Trim();
+            //string oldpass = txt_PasswordOld.Password.Trim();
+            //string newpass = txt_PasswordNew.Password.Trim();
+            //string retypepass = txt_passwordReType.Password.Trim();
+
+
+            //if (loginemailid != null && retypepass != null)
+            //{
+            //    changed = mydac.changeuserpassword(loginemailid, oldpass, newpass, retypepass);
+            //    if (changed == 1)
+            //    {
+            //        MessageBox.Show("Your new Password Updated");
+
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Updation Failed,Ensure Your Login Information Is Correct");
+            //}
         }
     }
 }

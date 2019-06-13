@@ -7,9 +7,9 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" d:DesignWidth="300" Height="314.666">
     <Grid Background="#FF08A3D1" Margin="0,-111,-633,-133" RenderTransformOrigin="0.499,0.522">
-        <Image x:Name="image" HorizontalAlignment="Left" Height="155" Margin="80,32,0,0" VerticalAlignment="Top" Width="133" Source="/UserManagementApplication;component/Assets/ApplicationList.png"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="145" Margin="440,32,0,0" VerticalAlignment="Top" Width="152" Source="/UserManagementApplication;component/Assets/UserList.png"/>
-        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="201" Margin="263,32,0,0" VerticalAlignment="Top" Width="145" Source="/UserManagementApplication;component/Assets/EmployeeList.png"/>
+        <Image ToolTip="Application Management" x:Name="img_Application" HorizontalAlignment="Left" Height="155" Margin="80,32,0,0" VerticalAlignment="Top" Width="133" Source="/UserManagementApplication;component/Assets/ApplicationList.png"/>
+        <Image ToolTip="Employee Management" x:Name="img_User" HorizontalAlignment="Left" Height="145" Margin="440,32,0,0" VerticalAlignment="Top" Width="152" Source="/UserManagementApplication;component/Assets/UserList.png"/>
+        <Image ToolTip="User Management" x:Name="img_Employee" HorizontalAlignment="Left" Height="201" Margin="263,32,0,0" VerticalAlignment="Top" Width="145" Source="/UserManagementApplication;component/Assets/EmployeeList.png"/>
 
     </Grid>
 </UserControl>

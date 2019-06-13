@@ -29,7 +29,9 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid Background="#FFDEDEDE">
-        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="540" Width="1010"/>
+        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="540" Width="1010" Background="White">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="305" Margin="173,84,0,0" VerticalAlignment="Top" Width="742" Source="/UserManagementApplication;component/Assets/welcome.png"/>
+        </Grid>
         <Grid Height="60" VerticalAlignment="Top" Background="#FF5C99D6">
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
@@ -76,19 +78,19 @@
                             <TextBlock Text="Home" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem x:Name="ItemCreate" Height="60">
+                    <ListViewItem x:Name="ItemApplication" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Application" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Application List" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem Height="60">
+                    <ListViewItem x:Name="ItemUser" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="AccountPlus" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="User Management" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem Height="60">
+                    <ListViewItem x:Name="ItemEmployee" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="AccountCardDetails" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Employee List" VerticalAlignment="Center"  Margin="20 10"/>

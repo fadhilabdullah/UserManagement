@@ -38,7 +38,7 @@
                 <PasswordBox x:Name="txt_password" PasswordChar="*" Margin="0,10" materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
-        <Button x:Name="btn_login" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,100,81" Content="LOGIN" Click="btn_login_Click"/>
+        <Button x:Name="btn_login"  Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,100,81" Content="LOGIN" Click="btn_login_Click"/>
         <Image Source="/UserManagementApplication;component/Assets/Home.png" Width="100" Height="100" VerticalAlignment="Top" Margin="30"/>
         <CheckBox x:Name="checkRememer" Content="Remember Me" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="121,0,80,57" Foreground="Gray" Cursor="Hand" Width="141" HorizontalContentAlignment="Stretch"/>
         <TextBlock x:Name="Forgot" HorizontalAlignment="Left" Margin="127,463,0,0" TextWrapping="Wrap" Text="Forgot Password?" VerticalAlignment="Top" MouseUp="Forgot_MouseUp" Cursor="Hand"/>

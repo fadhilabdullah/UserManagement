@@ -1,10 +1,13 @@
 ﻿
 FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\App.xaml;;
-FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\ApplicationListxaml.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\ApplicationList.xaml;;
 FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\DashBoard.xaml;;
 FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\EmployeeList.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\InputApplication.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\InputEmployee.xaml;;
 FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\ForgetPassword.xaml;;
-FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\Home.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\Home.xaml;;
 FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\MainWindow.xaml;;
-FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\UserManagement.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\InputUser.xaml;;
+FC:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\UserManagementApplication\UserInterface\UserList.xaml;;
 

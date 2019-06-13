@@ -1,5 +1,6 @@
 ﻿using BusinessLogic.Service;
 using BusinessLogic.Service.Application;
+using Common.Repository.Application;
 using DataAccess.Context;
 using DataAccess.ViewModels;
 using System;
@@ -70,24 +71,28 @@ namespace UserManagementApplication
             }
         }
 
-        private void btn_login_Click(object sender, RoutedEventArgs e)
+        public void Login()
         {
-            string email = txt_email.Text;
-            string password = txt_password.Password;
-
-            var get = myContext.Employees.Include("User").Where(x => (x.Email == (email) && x.User.Password == (password))).SingleOrDefault();
-            //result = iLoginService.(get);
-            if (txt_email.Text == email && txt_password.Password == password)
+            ILoginService login = new LoginService();
+            if (login.CekLogin(txt_email.Text, txt_password.Password) == true)
             {
-                MessageBox.Show("Succes Login");
-                DashBoard dashboard = new DashBoard();
-                dashboard.Show();
+                MessageBox.Show("Login Success", "Warning", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Hide();
+                DashBoard dashboard = new DashBoard();
+                dashboard.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Your Login Fail");
+                MessageBox.Show("Login Fail", "Warning", MessageBoxButton.OK, MessageBoxImage.Information);
+                txt_password.Clear();
+                txt_password.Focus();
             }
+        }
+
+        private void btn_login_Click(object sender, RoutedEventArgs e)
+        {
+            Login();
+            save_data();
         }
 
         private void Forgot_MouseUp(object sender, MouseButtonEventArgs e)
