@@ -4,45 +4,81 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserManagementApplication.UserInterface"
+             Loaded="UserControl_Loaded"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid Background="#FF08A3D1" Margin="0,-19,-297,-326" RenderTransformOrigin="0.543,0.507">
-            <Label x:Name="label" Content="Input Employee" HorizontalAlignment="Left" Margin="238,0,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="18"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="61,118,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,143,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="61,170,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#FF3ED7E6" Margin="0,0,-1570,-336" RenderTransformOrigin="0.543,0.507" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="101*"/>
+                <ColumnDefinition Width="98*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="label" Content="Input Employee" HorizontalAlignment="Left" Margin="229,26,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="18" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="62,128,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,156,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="62,191,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="61,224,0,0" TextWrapping="Wrap" Text="Province" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" RenderTransformOrigin="1.422,0.235"/>
             <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="61,290,0,0" TextWrapping="Wrap" Text="Regency" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="62,254,0,0" TextWrapping="Wrap" Text="District" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="65,323,0,0" TextWrapping="Wrap" Text="Village" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="62,356,0,0" TextWrapping="Wrap" Text="Religion" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="61,383,0,0" TextWrapping="Wrap" Text="Martial Status" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="62,413,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="61,440,0,0" TextWrapping="Wrap" Text="Join Date" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="61,473,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="61,506,0,0" TextWrapping="Wrap" Text="Employee Status" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" Margin="62,527,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="23" Margin="229,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101" Background="#FFF9F4F4"/>
-            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="61,93,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.476,-0.31"/>
-            <TextBox x:Name="txt_Nama" HorizontalAlignment="Left" Height="23" Margin="229,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="#FFF9F4F4"/>
-            <ComboBox x:Name="cmb_Province" HorizontalAlignment="Left" Margin="229,212,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <ComboBox x:Name="cmb_District" HorizontalAlignment="Left" Margin="229,245,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <ComboBox x:Name="cmb_Regency" HorizontalAlignment="Left" Margin="229,278,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <ComboBox x:Name="cmb_Village" HorizontalAlignment="Left" Margin="229,311,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <ComboBox x:Name="cmb_Relegion" HorizontalAlignment="Left" Margin="229,344,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <CheckBox x:Name="cb_GenderLk" Content="Laki-Laki" HorizontalAlignment="Left" Margin="229,137,0,0" VerticalAlignment="Top" Height="25"/>
-            <CheckBox x:Name="cb_GenderPr" Content="Perempuan" HorizontalAlignment="Left" Margin="330,137,0,0" VerticalAlignment="Top" Height="25"/>
-            <CheckBox x:Name="cb_StatSingle" Content="Single" HorizontalAlignment="Left" Margin="229,377,0,0" VerticalAlignment="Top" Height="25"/>
-            <CheckBox x:Name="cb_StatMarried" Content="Married" HorizontalAlignment="Left" Margin="330,377,0,0" VerticalAlignment="Top" Height="25"/>
-            <TextBox x:Name="txt_PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="229,403,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="#FFF9F4F4"/>
-            <DatePicker x:Name="dtp_JoinDate" HorizontalAlignment="Left" Margin="229,431,0,0" VerticalAlignment="Top" Background="#FFF1E8E8" Width="192"/>
-            <ComboBox x:Name="cb_Position" HorizontalAlignment="Left" Margin="229,461,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <ComboBox x:Name="cb_EmployeeStatus" HorizontalAlignment="Left" Margin="229,494,0,0" VerticalAlignment="Top" Width="174" Background="#FFF1EAEA"/>
-            <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="23" Margin="229,527,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="#FFF9F4F4"/>
-            <ListBox x:Name="lb_Address" HorizontalAlignment="Left" Height="40" Margin="229,167,0,0" VerticalAlignment="Top" Width="236" Background="#FFF9F2F2"/>
-            <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="183,583,0,0" VerticalAlignment="Top" Width="100" Background="#FF0CDC0C" Height="34"/>
-            <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="330,583,0,0" VerticalAlignment="Top" Width="100" Background="#FFDC320C" Height="34"/>
+            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="523,175,0,0" TextWrapping="Wrap" Text="Martial Status" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="524,209,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="523,236,0,0" TextWrapping="Wrap" Text="Join Date" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="523,269,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="523,296,0,0" TextWrapping="Wrap" Text="Employee Status" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" Margin="524,323,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="23" Margin="229,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101" Background="White"/>
+            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="61,103,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.476,-0.31"/>
+            <TextBox x:Name="txt_Nama" HorizontalAlignment="Left" Height="23" Margin="229,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
+            <ComboBox x:Name="cmb_Province" HorizontalAlignment="Left" Margin="229,212,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_District" HorizontalAlignment="Left" Margin="229,245,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Regency" HorizontalAlignment="Left" Margin="229,278,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Village" HorizontalAlignment="Left" Margin="229,311,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Relegion" HorizontalAlignment="Left" Margin="229,344,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2">
+                <ComboBoxItem Tag="Islam" IsSelected="True" Content="Islam"/>
+                <ComboBoxItem Tag="Kristen" Content="Kristen"/>
+                <ComboBoxItem Tag="Budha" IsSelected="True" Content="Budha"/>
+                <ComboBoxItem Tag="Katolik" Content="Katolik"/>
+                <ComboBoxItem Tag="Hindu" IsSelected="True" Content="Katolik"/>
+            </ComboBox>
+            <TextBox x:Name="txt_PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="691,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
+            <DatePicker x:Name="dtp_JoinDate" HorizontalAlignment="Left" Margin="691,227,0,0" VerticalAlignment="Top" Background="White" Width="192"/>
+            <ComboBox x:Name="cmb_Position" HorizontalAlignment="Left" Margin="691,257,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_EmployeeStatus" HorizontalAlignment="Left" Margin="691,290,0,0" VerticalAlignment="Top" Width="174" Background="White">
+                <ComboBoxItem Tag="Tetap" IsSelected="True">Tetap</ComboBoxItem>
+                <ComboBoxItem Tag="Karyawan">Kontrak</ComboBoxItem>
+            </ComboBox>
+            <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="23" Margin="691,323,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
+            <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="330,418,0,0" VerticalAlignment="Top" Width="100" Background="#FF0CDC0C" Height="34" Click="btn_Save_Click"/>
+            <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="510,418,0,0" VerticalAlignment="Top" Width="100" Background="#FFDC320C" Height="34" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-2.386"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.708"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Name="txt_Address" HorizontalAlignment="Left" Height="23" Margin="229,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" Background="White"/>
+            <ComboBox x:Name="cmb_Gender" HorizontalAlignment="Left" Margin="229,151,0,0" VerticalAlignment="Top" Width="174" Background="White">
+                <ComboBoxItem Tag="L" IsSelected="True">Laki_Laki</ComboBoxItem>
+                <ComboBoxItem Tag="P">Perempuan</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="cmb_MartialStatus" HorizontalAlignment="Left" Margin="691,160,0,0" VerticalAlignment="Top" Width="174" Background="White">
+                <ComboBoxItem Tag="Single" IsSelected="True" Content="Single"/>
+                <ComboBoxItem Tag="Married" Content="Married"/>
+            </ComboBox>
+            <TextBlock x:Name="textBlock13_Copy" HorizontalAlignment="Left" Margin="524,351,0,0" TextWrapping="Wrap" Text="Salary" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="txt_Salary" HorizontalAlignment="Left" Height="23" Margin="691,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
+            <TextBlock x:Name="textBlock9_Copy" HorizontalAlignment="Left" Margin="524,142,0,0" TextWrapping="Wrap" Text="Nama Department" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+            <ComboBox x:Name="cmb_NmDepartment" HorizontalAlignment="Left" Margin="691,127,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValue="id" DisplayMemberPath="Name"/>
+
         </Grid>
 
     </Grid>

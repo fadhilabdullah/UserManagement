@@ -43,11 +43,6 @@ namespace UserManagementApplication.UserInterface
 
             switch (((ListViewItem)((ListView)sender).SelectedItem).Name)
             {
-                case "ItemHome":
-                    usc = new Home();
-                    GridMain.Children.Add(usc);
-                    break;
-
                 case "ItemApplication":
                     usc = new ApplicationListxaml();
                     GridMain.Children.Add(usc);

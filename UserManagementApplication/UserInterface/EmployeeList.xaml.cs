@@ -24,5 +24,16 @@ namespace UserManagementApplication.UserInterface
         {
             InitializeComponent();
         }
+
+        private void btn_New_Click(object sender, RoutedEventArgs e)
+        {
+            UserControl usc = null;
+            GridMain.Children.Clear();
+
+                    usc = new InputEmployee();
+                    GridMain.Children.Add(usc);
+                    
+            
+        }
     }
 }

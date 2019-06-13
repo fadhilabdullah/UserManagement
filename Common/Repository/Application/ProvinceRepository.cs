@@ -40,7 +40,7 @@ namespace Common.Repository.Application
 
         public Province Get(int id)
         {
-            var get = myContext.Provinces.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Provinces.Find(id);
             return get;
         }
 

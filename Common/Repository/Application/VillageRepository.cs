@@ -40,7 +40,7 @@ namespace Common.Repository.Application
 
         public Village Get(int id)
         {
-            var get = myContext.Villages.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Villages.Find(id);
             return get;
         }
 

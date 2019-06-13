@@ -34,7 +34,7 @@ namespace Common.Repository.Application
 
         public District Get(int id)
         {
-            var get = myContext.Districts.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Districts.Find(id);
             return get;
         }
 

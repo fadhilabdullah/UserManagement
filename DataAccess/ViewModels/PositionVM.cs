@@ -8,6 +8,13 @@ namespace DataAccess.ViewModels
 {
     public class PositionVM
     {
+        public PositionVM(string name)
+        {
+            this.Name = name;
+        }
+
+        public PositionVM() { }
+
         public int Id { get; set; }
         public string Name { get; set; }
     }

@@ -40,7 +40,7 @@ namespace Common.Repository.Application
 
         public Position Get(int id)
         {
-            var get = myContext.Positions.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Positions.Find(id);
             return get;
         }
 

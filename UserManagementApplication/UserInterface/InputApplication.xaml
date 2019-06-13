@@ -7,12 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid Background="#FF08A3D1" Margin="0,-19,-297,91" RenderTransformOrigin="0.543,0.507">
-            <Label x:Name="label" Content="Input User" HorizontalAlignment="Left" Margin="238,0,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="18"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="61,121,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <Grid Background="#FF08A3D1" Margin="-52,0,-245,0" RenderTransformOrigin="0.543,0.507" Height="300" VerticalAlignment="Top">
+            <Label x:Name="label" Content="Input Application" HorizontalAlignment="Left" Margin="190,0,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="18"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="61,121,0,0" TextWrapping="Wrap" Text="Application Name" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="23" Margin="229,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101" Background="#FFF9F4F4"/>
             <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="61,93,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.476,-0.31"/>
-            <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="23" Margin="229,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="#FFF9F4F4"/>
+            <TextBox x:Name="txt_AppName" HorizontalAlignment="Left" Height="23" Margin="229,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="#FFF9F4F4"/>
             <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="167,173,0,0" VerticalAlignment="Top" Width="100" Background="#FF0CDC0C" Height="34"/>
             <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="314,173,0,0" VerticalAlignment="Top" Width="100" Background="#FFDC320C" Height="34"/>
         </Grid>

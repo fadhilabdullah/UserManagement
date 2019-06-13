@@ -40,7 +40,7 @@ namespace Common.Repository.Application
 
         public User Get(int id)
         {
-            var get = myContext.Users.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Users.Find(id);
             return get;
         }
 

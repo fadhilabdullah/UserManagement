@@ -114,10 +114,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Home.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserInterface\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -131,9 +127,6 @@
     </Compile>
     <Compile Include="UserInterface\ForgetPassword.xaml.cs">
       <DependentUpon>ForgetPassword.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

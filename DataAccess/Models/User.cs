@@ -15,6 +15,10 @@ namespace DataAccess.Models
         public string Password { get; set; }
         public string LoginStatus { get; set; }
 
+        [ForeignKey("Employee")]
+        public int Employee_Id { get; set; }
+        public virtual Employee Employee { get; set; }
+
         public User() { }
 
         public User(UserVM userVM)

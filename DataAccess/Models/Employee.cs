@@ -21,13 +21,10 @@ namespace DataAccess.Models
         public string Employement_Status { get; set; }
         public string Email { get; set; }
         public Double Salary { get; set; }
-        public int User_Id { get; set; }
         public int Department_Id { get; set; }
         public int Village_Id { get; set; }
         public int Position_Id { get; set; }
 
-        [ForeignKey("User_Id")]
-        public virtual User User { get; set; }
         [ForeignKey("Department_Id")]
         public virtual Department Department { get; set; }
         [ForeignKey("Village_Id")]
@@ -48,7 +45,6 @@ namespace DataAccess.Models
             this.Employement_Status = employeeVM.Employement_Status;
             this.Email = employeeVM.Email;
             this.Salary = employeeVM.Salary;
-            this.User_Id = employeeVM.User_Id;
             this.Department_Id = employeeVM.Department_Id;
             this.Village_Id = employeeVM.Village_Id;
             this.Position_Id = employeeVM.Position_Id;
@@ -66,7 +62,6 @@ namespace DataAccess.Models
             this.Employement_Status = employeeVM.Employement_Status;
             this.Email = employeeVM.Email;
             this.Salary = employeeVM.Salary;
-            this.User_Id = employeeVM.User_Id;
             this.Department_Id = employeeVM.Department_Id;            
             this.Village_Id = employeeVM.Village_Id;
             this.Position_Id = employeeVM.Position_Id;

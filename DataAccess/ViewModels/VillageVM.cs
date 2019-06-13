@@ -8,6 +8,13 @@ namespace DataAccess.ViewModels
 {
     public class VillageVM
     {
+        public VillageVM(string name)
+        {
+            this.Name = name;
+        }
+
+        public VillageVM() { }
+
         public int Id { get; set; }
         public string Name { get; set; }
 

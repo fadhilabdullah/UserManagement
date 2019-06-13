@@ -34,7 +34,7 @@ namespace Common.Repository.Application
 
         public Department Get(int id)
         {
-            var get = myContext.Departments.SingleOrDefault(x => x.Id == id && x.IsDelete == false);
+            var get = myContext.Departments.Find(id);
             return get;
         }
 

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using BusinessLogic.Service;
+using BusinessLogic.Service.Application;
+using DataAccess.Context;
+using DataAccess.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +24,47 @@ namespace UserManagementApplication.UserInterface
     /// </summary>
     public partial class InputEmployee : UserControl
     {
+        IEmployeeService iEmployeeService = new EmployeeService();
+        IProvinceService iProvinceService = new ProvinceService();
+        IRegencyService iRegencyService = new RegencyService();
+        IDistrictService iDistrictService = new DistrictService();
+        IVillageService iVillageService = new VillageService();
+        IDepartmentService iDepartmentService = new DepartmentService();
+        IPositionService iPositionService = new PositionService(); 
+
+        EmployeeVM employeeVM = new EmployeeVM();
+
         public InputEmployee()
         {
             InitializeComponent();
+            //GetData();
+        }
+
+        private void btn_Save_Click(object sender, RoutedEventArgs e)
+        {
+            bool result;
+            if (string.IsNullOrWhiteSpace(txt_Id.Text))
+            {
+                var EmployeeParam = new EmployeeVM(txt_Nama.Text, txt_Address.Text ,cmb_Gender.Text, cmb_Relegion.Text, cmb_MartialStatus.Text, txt_PhoneNumber.Text, cmb_EmployeeStatus.Text, txt_Email.Text, Convert.ToInt32(txt_Salary.Text), Convert.ToInt32(cmb_NmDepartment.SelectedValue), Convert.ToInt32(cmb_Village.SelectedValue), Convert.ToInt32(cmb_Position.SelectedValue));
+                result = iEmployeeService.Insert(EmployeeParam);
+                MessageBox.Show(result ? "Insert Succesfully" : "Insert Failed");
+            }
+            //GetData();
+        }
+
+        private void GetData()
+        {
+            cmb_Province.ItemsSource = iProvinceService.Get();
+            cmb_Regency.ItemsSource = iRegencyService.Get();
+            cmb_District.ItemsSource = iDistrictService.Get();
+            cmb_Village.ItemsSource = iVillageService.Get();
+            cmb_Position.ItemsSource = iPositionService.Get();
+            cmb_NmDepartment.ItemsSource = iDepartmentService.Get();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            GetData();
         }
     }
 }

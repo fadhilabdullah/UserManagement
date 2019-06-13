@@ -9,6 +9,8 @@ C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\D
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.Migrations.MyTable.resources
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.Migrations.MyTableUpdate.resources
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.Migrations.MyTableUpdate2.resources
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.exe
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.pdb

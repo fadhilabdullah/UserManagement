@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BusinessLogic.Service;
+using BusinessLogic.Service.Application;
+using DataAccess.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +21,25 @@ namespace UserManagementApplication.UserInterface
     /// <summary>
     /// Interaction logic for UserManagement.xaml
     /// </summary>
-    public partial class UserManagement : UserControl
+    public partial class InputUser : UserControl
     {
-        public UserManagement()
+        IUserService iUserService = new UserService();
+
+        UserVM userVM = new UserVM();
+        public InputUser()
         {
             InitializeComponent();
+        }
+
+        private void btn_Save_Click(object sender, RoutedEventArgs e)
+        {
+            bool result;
+            if (string.IsNullOrWhiteSpace(txt_Id.Text))
+            {
+                var UserParam = new UserVM(txt_Password.Text, txt_ConfirmPassword.Text);
+                result = iUserService.Insert(UserParam);
+                MessageBox.Show(result ? "Insert Succesfully" : "Insert Failed");
+            }           
         }
     }
 }

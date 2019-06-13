@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid Background="#FF08A3D1" Margin="0,0,-325,-259" RenderTransformOrigin="0.499,0.522">
+        <Grid Name="GridMain" Background="#FF08A3D1" Margin="0,0,-325,-259" RenderTransformOrigin="0.499,0.522">
             <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="27,112,0,0" VerticalAlignment="Top" Height="188" Width="568">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="No" Binding="{Binding No}"/>
@@ -19,7 +19,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Label x:Name="label" Content="User Management" HorizontalAlignment="Left" Margin="208,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18" RenderTransformOrigin="-0.323,0.369"/>
-            <Button x:Name="btn_Plus" Content="New" HorizontalAlignment="Left" Margin="27,75,0,0" VerticalAlignment="Top" Width="75">
+            <Button x:Name="btn_Plus" Content="New" HorizontalAlignment="Left" Margin="27,75,0,0" VerticalAlignment="Top" Width="75" Click="btn_Plus_Click">
                 <Button.Background>
                     <RadialGradientBrush>
                         <GradientStop Color="Black" Offset="0"/>

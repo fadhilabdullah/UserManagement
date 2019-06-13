@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ViewModels
 {
-    public class EmpApplication
+    public class EmpApplicationVM
     {
         public int Employee_Id { get; set; }
         public int Application_Id { get; set; }

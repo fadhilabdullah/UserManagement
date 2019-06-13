@@ -57,6 +57,14 @@
     <Compile Include="Migrations\201906100900135_MyTable.Designer.cs">
       <DependentUpon>201906100900135_MyTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906131139374_MyTableUpdate.cs" />
+    <Compile Include="Migrations\201906131139374_MyTableUpdate.Designer.cs">
+      <DependentUpon>201906131139374_MyTableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906131157014_MyTableUpdate2.cs" />
+    <Compile Include="Migrations\201906131157014_MyTableUpdate2.Designer.cs">
+      <DependentUpon>201906131157014_MyTableUpdate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Aplication.cs" />
     <Compile Include="Models\Department.cs" />
@@ -75,7 +83,7 @@
     <Compile Include="ViewModels\ApplicationVM.cs" />
     <Compile Include="ViewModels\DepartmentVM.cs" />
     <Compile Include="ViewModels\DistrictVM.cs" />
-    <Compile Include="ViewModels\EmpApplication.cs" />
+    <Compile Include="ViewModels\EmpApplicationVM.cs" />
     <Compile Include="ViewModels\EmployeeVM.cs" />
     <Compile Include="ViewModels\PositionVM.cs" />
     <Compile Include="ViewModels\ProvinceVM.cs" />
@@ -92,6 +100,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906100900135_MyTable.resx">
       <DependentUpon>201906100900135_MyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906131139374_MyTableUpdate.resx">
+      <DependentUpon>201906131139374_MyTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906131157014_MyTableUpdate2.resx">
+      <DependentUpon>201906131157014_MyTableUpdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

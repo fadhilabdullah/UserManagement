@@ -8,6 +8,13 @@ namespace DataAccess.ViewModels
 {
     public class DepartmentVM
     {
+        public DepartmentVM(string name)
+        {
+            this.Name = name;
+        }
+
+        public DepartmentVM() { }
+
         public int Id { get; set; }
         public string Name { get; set; }
     }
