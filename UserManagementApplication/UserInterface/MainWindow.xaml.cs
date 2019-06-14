@@ -43,7 +43,7 @@ namespace UserManagementApplication
                 if (Properties.Settings.Default.Remme == "yes")
                 {
                     txt_email.Text = Properties.Settings.Default.UserName;
-                    txt_email.Text = Properties.Settings.Default.Password;
+                    txt_password.Password = Properties.Settings.Default.Password;
                     checkRememer.IsChecked = true;
                 }
                 else
@@ -58,7 +58,7 @@ namespace UserManagementApplication
             if (checkRememer.IsChecked == true)
             {
                 Properties.Settings.Default.UserName = txt_email.Text;
-                Properties.Settings.Default.Password = txt_email.Text;
+                Properties.Settings.Default.Password = txt_password.Password;
                 Properties.Settings.Default.Remme = "yes";
                 Properties.Settings.Default.Save();
             }

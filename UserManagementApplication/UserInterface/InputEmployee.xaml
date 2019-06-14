@@ -32,30 +32,30 @@
             <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="523,269,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="523,296,0,0" TextWrapping="Wrap" Text="Employee Status" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" Margin="524,323,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="23" Margin="229,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101" Background="White"/>
+            <TextBox x:Name="txt_Id" HorizontalAlignment="Left" Height="23" Margin="229,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="101" Background="White" IsReadOnly="True" IsEnabled="False"/>
             <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="61,103,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.476,-0.31"/>
             <TextBox x:Name="txt_Nama" HorizontalAlignment="Left" Height="23" Margin="229,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
-            <ComboBox x:Name="cmb_Province" HorizontalAlignment="Left" Margin="229,212,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
-            <ComboBox x:Name="cmb_District" HorizontalAlignment="Left" Margin="229,245,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
-            <ComboBox x:Name="cmb_Regency" HorizontalAlignment="Left" Margin="229,278,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
-            <ComboBox x:Name="cmb_Village" HorizontalAlignment="Left" Margin="229,311,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Province" HorizontalAlignment="Left" Margin="229,212,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValuePath="Id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_District" HorizontalAlignment="Left" Margin="229,245,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValuePath="Id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Regency" HorizontalAlignment="Left" Margin="229,278,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValuePath="Id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Village" HorizontalAlignment="Left" Margin="229,311,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2" SelectedValuePath="Id" DisplayMemberPath="Name"/>
             <ComboBox x:Name="cmb_Relegion" HorizontalAlignment="Left" Margin="229,344,0,0" VerticalAlignment="Top" Width="174" Background="White" Grid.ColumnSpan="2">
                 <ComboBoxItem Tag="Islam" IsSelected="True" Content="Islam"/>
                 <ComboBoxItem Tag="Kristen" Content="Kristen"/>
                 <ComboBoxItem Tag="Budha" IsSelected="True" Content="Budha"/>
                 <ComboBoxItem Tag="Katolik" Content="Katolik"/>
-                <ComboBoxItem Tag="Hindu" IsSelected="True" Content="Katolik"/>
+                <ComboBoxItem Tag="Hindu" IsSelected="True" Content="Hindu"/>
             </ComboBox>
             <TextBox x:Name="txt_PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="691,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
             <DatePicker x:Name="dtp_JoinDate" HorizontalAlignment="Left" Margin="691,227,0,0" VerticalAlignment="Top" Background="White" Width="192"/>
-            <ComboBox x:Name="cmb_Position" HorizontalAlignment="Left" Margin="691,257,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_Position" HorizontalAlignment="Left" Margin="691,257,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValuePath="Id" DisplayMemberPath="Name"/>
             <ComboBox x:Name="cmb_EmployeeStatus" HorizontalAlignment="Left" Margin="691,290,0,0" VerticalAlignment="Top" Width="174" Background="White">
                 <ComboBoxItem Tag="Tetap" IsSelected="True">Tetap</ComboBoxItem>
                 <ComboBoxItem Tag="Karyawan">Kontrak</ComboBoxItem>
             </ComboBox>
             <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="23" Margin="691,323,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
             <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="330,418,0,0" VerticalAlignment="Top" Width="100" Background="#FF0CDC0C" Height="34" Click="btn_Save_Click"/>
-            <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="510,418,0,0" VerticalAlignment="Top" Width="100" Background="#FFDC320C" Height="34" RenderTransformOrigin="0.5,0.5">
+            <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="510,418,0,0" VerticalAlignment="Top" Width="100" Background="#FFDC320C" Height="34" RenderTransformOrigin="0.5,0.5" Click="btn_Cancel_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -67,7 +67,7 @@
             </Button>
             <TextBox x:Name="txt_Address" HorizontalAlignment="Left" Height="23" Margin="229,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" Background="White"/>
             <ComboBox x:Name="cmb_Gender" HorizontalAlignment="Left" Margin="229,151,0,0" VerticalAlignment="Top" Width="174" Background="White">
-                <ComboBoxItem Tag="L" IsSelected="True">Laki_Laki</ComboBoxItem>
+                <ComboBoxItem Tag="L" IsSelected="True">Laki-Laki</ComboBoxItem>
                 <ComboBoxItem Tag="P">Perempuan</ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="cmb_MartialStatus" HorizontalAlignment="Left" Margin="691,160,0,0" VerticalAlignment="Top" Width="174" Background="White">
@@ -77,7 +77,7 @@
             <TextBlock x:Name="textBlock13_Copy" HorizontalAlignment="Left" Margin="524,351,0,0" TextWrapping="Wrap" Text="Salary" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
             <TextBox x:Name="txt_Salary" HorizontalAlignment="Left" Height="23" Margin="691,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" Background="White"/>
             <TextBlock x:Name="textBlock9_Copy" HorizontalAlignment="Left" Margin="524,142,0,0" TextWrapping="Wrap" Text="Nama Department" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-            <ComboBox x:Name="cmb_NmDepartment" HorizontalAlignment="Left" Margin="691,127,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValue="id" DisplayMemberPath="Name"/>
+            <ComboBox x:Name="cmb_NmDepartment" HorizontalAlignment="Left" Margin="691,127,0,0" VerticalAlignment="Top" Width="174" Background="White" SelectedValuePath="Id" DisplayMemberPath="Name"/>
 
         </Grid>
 

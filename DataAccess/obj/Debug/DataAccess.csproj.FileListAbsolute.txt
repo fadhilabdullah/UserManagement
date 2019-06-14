@@ -14,3 +14,4 @@ C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\D
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.exe
 C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Denis\Documents\Visual Studio 2015\Projects\UserManagementApplication\DataAccess\obj\Debug\DataAccess.Migrations.MyTableUpdate3.resources

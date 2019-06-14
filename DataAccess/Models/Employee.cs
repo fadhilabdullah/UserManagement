@@ -34,7 +34,7 @@ namespace DataAccess.Models
 
         public Employee() { }
 
-        public Employee(EmployeeVM employeeVM)
+        public Employee(EmployeeVM employeeVM) //contructor
         {
             this.Name = employeeVM.Name;
             this.Address = employeeVM.Address;

@@ -45,10 +45,38 @@ namespace UserManagementApplication.UserInterface
             bool result;
             if (string.IsNullOrWhiteSpace(txt_Id.Text))
             {
-                var EmployeeParam = new EmployeeVM(txt_Nama.Text, txt_Address.Text ,cmb_Gender.Text, cmb_Relegion.Text, cmb_MartialStatus.Text, txt_PhoneNumber.Text, cmb_EmployeeStatus.Text, txt_Email.Text, Convert.ToInt32(txt_Salary.Text), Convert.ToInt32(cmb_NmDepartment.SelectedValue), Convert.ToInt32(cmb_Village.SelectedValue), Convert.ToInt32(cmb_Position.SelectedValue));
+                var EmployeeParam = new EmployeeVM(txt_Nama.Text, txt_Address.Text ,cmb_Gender.Text, cmb_Relegion.Text, 
+                    cmb_MartialStatus.Text, txt_PhoneNumber.Text, cmb_EmployeeStatus.Text, txt_Email.Text, 
+                    Convert.ToDouble(txt_Salary.Text), Convert.ToInt32(cmb_NmDepartment.SelectedValue), 
+                    Convert.ToInt32(cmb_Village.SelectedValue), Convert.ToInt32(cmb_Position.SelectedValue));
                 result = iEmployeeService.Insert(EmployeeParam);
                 MessageBox.Show(result ? "Insert Succesfully" : "Insert Failed");
             }
+            else
+            {
+                employeeVM.Update(Convert.ToInt32(txt_Id.Text), txt_Nama.Text, txt_Address.Text, cmb_Gender.Text, cmb_Relegion.Text,
+                    cmb_MartialStatus.Text, txt_PhoneNumber.Text, cmb_EmployeeStatus.Text, txt_Email.Text,
+                    Convert.ToDouble(txt_Salary.Text), Convert.ToInt32(cmb_NmDepartment.SelectedValue),
+                    Convert.ToInt32(cmb_Village.SelectedValue), Convert.ToInt32(cmb_Position.SelectedValue));
+                result = iEmployeeService.Update(employeeVM.Id, employeeVM);
+                MessageBox.Show(result ? "Edit Succesfully" : "Edit Failed");
+            }
+            txt_Nama.Text = "";
+            txt_Address.Text = "";
+            cmb_Gender.Text = "";
+            cmb_Relegion.Text = "";
+            cmb_MartialStatus.Text = "";
+            txt_PhoneNumber.Text = "";
+            cmb_EmployeeStatus.Text = "";
+            txt_Email.Text = "";
+            txt_Salary.Text = "";
+            cmb_Position.Text = "";
+            cmb_Province.Text = "";
+            cmb_Regency.Text = "";
+            cmb_District.Text = "";
+            cmb_Village.Text = "";
+            cmb_NmDepartment.Text = "";
+            dtp_JoinDate.Text = "";
             //GetData();
         }
 
@@ -65,6 +93,26 @@ namespace UserManagementApplication.UserInterface
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             GetData();
+        }
+
+        private void btn_Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            txt_Nama.Text = "";
+            txt_Address.Text = "";
+            cmb_Gender.Text = "";
+            cmb_Relegion.Text = "";
+            cmb_MartialStatus.Text = "";
+            txt_PhoneNumber.Text = "";
+            cmb_EmployeeStatus.Text = "";
+            txt_Email.Text = "";
+            txt_Salary.Text = "";
+            cmb_Position.Text = "";
+            cmb_Province.Text = "";
+            cmb_Regency.Text = "";
+            cmb_District.Text = "";
+            cmb_Village.Text = "";
+            cmb_NmDepartment.Text = "";
+            dtp_JoinDate.Text = "";
         }
     }
 }

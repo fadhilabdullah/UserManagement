@@ -8,7 +8,9 @@ namespace DataAccess.ViewModels
 {
     public class EmployeeVM
     {
-        public EmployeeVM(string name, string Address, string gender, string religion, string marital_status, string phone_number, string employement_status, string email, double salary, int department_id, int village_id, int position_id) //---------> Parsing
+        public EmployeeVM(string name, string Address, string gender, string religion, string marital_status, 
+            string phone_number, string employement_status, string email, double salary, int department_id, 
+            int village_id, int position_id) 
         {
             this.Name = name;
             this.Address = Address;
@@ -26,10 +28,24 @@ namespace DataAccess.ViewModels
 
         public EmployeeVM() { }
 
-        //public void Update(int id, string name, int stock, double price, int supplier_id)
-        //{
-          
-        //}
+        public void Update(int id, string name, string Address, string gender, string religion, string marital_status,
+            string phone_number, string employement_status, string email, double salary, int department_id,
+            int village_id, int position_id)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Address = Address;
+            this.Gender = gender;
+            this.Religion = religion;
+            this.Marital_Status = marital_status;
+            this.Phone_Number = phone_number;
+            this.Employement_Status = employement_status;
+            this.Email = email;
+            this.Salary = salary;
+            this.Department_Id = department_id;
+            this.Village_Id = village_id;
+            this.Position_Id = position_id;
+        }
 
         public int Id { get; set; }
         public string Name { get; set; }
